@@ -32,9 +32,7 @@ Al considerar dispositivos de sensado para medir la intensidad lumínica, se enc
 
 ### Sensor de Intensidad Lumínica con NodeMCU y LDR
 
-### Introducción
-
-La **intensidad lumínica** es una métrica que nos permite cuantificar el fenómeno físico de la luz. Los sensores que miden esta intensidad pueden ser sensibles a diversas fuentes lumínicas, como la luz visible, infrarroja o ultravioleta. 
+### Extensión de la capa de dispositivo
 
 En este proyecto, hemos utilizado una **fotorresistencia LDR**, que disminuye su resistencia a medida que se incrementa la exposición a la luz. Estos sensores tienen una velocidad de respuesta más baja comparada con otros dispositivos, como fotodiodos o fototransistores, y su resistividad puede verse afectada por la temperatura ambiente. Sin embargo, para este proyecto, el LDR es ideal debido a su bajo costo, respuesta adecuada y requisitos específicos del caso de uso.
 
@@ -64,20 +62,6 @@ Imagen 3. Respuesta en REMA de humedad
 ![image](https://github.com/FranzJr/miso-iot/assets/961269/694e2295-7255-4f12-8b85-cf518e7141ab)
 
 Imagen 4. Respuesta en REMA de luminosidad
-
-
-### Configuración de Conexión
-
-Para conectarse a la red WiFi y a Mosquitto Configurar:
-
-* **SSID (Nombre de la red WiFi)**:SSID
-* **Contraseña WiFi**: P4sw0rd
-* **Usuario MQTT**: f.rogelez
-* **Contraseña MQTT**: 200720375
-
-
-
-
 
 
 ### Conclusión
