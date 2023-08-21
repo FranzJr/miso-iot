@@ -9,6 +9,27 @@ Modulo 8 - Internet de las cosas - Maestría de la Universidad de los Andes de I
 
 ## Reto 1
 
+### Caracterización de la variable física (Intensidad Lumínica)
+
+La intensidad lumínica es una medida fundamental en el mundo de la física que se relaciona directamente con el fenómeno de la luz. Esta variable determina la potencia lumínica que se recibe en una superficie por unidad de área. Es vital en diversas aplicaciones, desde sistemas de control de iluminación hasta estudios medioambientales.
+
+Las unidades predominantes para esta medición son:
+
+- **Lúmenes (lm):** Se refiere a la cantidad total de luz visible que emite una fuente en todas las direcciones por segundo.
+  
+- **Lux:** Es una medida de la intensidad lumínica, que representa los lúmenes por metro cuadrado. Es la cantidad total de luz visible de una fuente que incide sobre un área de superficie específica.
+
+---
+### Selección de dispositivo de sensado
+
+Al considerar dispositivos de sensado para medir la intensidad lumínica, se encontraron varias opciones, que van desde fotorresistencias hasta fotodiodos y fototransistores. Cada sensor tiene sus particularidades, como velocidad de respuesta, precisión y rango de operación.
+
+- **Fotorresistencia (LDR):** Es un tipo de resistor cuya resistencia cambia en función de la cantidad de luz que incide sobre él. Presenta una sensibilidad en el rango de longitud de onda de 560nm a 600nm, lo que se asemeja al rango de percepción del ojo humano. Su respuesta es que cuanto más luz recibe, menor es su resistencia.
+
+- **Fotodiodos y Fototransistores:** Aunque ofrecen respuestas más rápidas y pueden tener una mayor precisión, tienden a ser más caros y requieren circuitería adicional para operar de manera óptima.
+
+**Justificación de Selección:** Se optó por utilizar la **Fotorresistencia LDR** (GL5516) para esta implementación. A pesar de tener una respuesta más lenta en comparación con otros sensores, cumple con los requisitos necesarios para esta aplicación. Su bajo costo, facilidad de uso y su curva de respuesta que se asemeja a la del ojo humano lo hacen adecuado para este proyecto. Además, no se requiere una alta precisión ni tiempo de respuesta inmediato para esta aplicación específica.
+
 ### Sensor de Intensidad Lumínica con NodeMCU y LDR
 
 ### Introducción
@@ -54,27 +75,9 @@ Para conectarse a la red WiFi y a Mosquitto Configurar:
 * **Usuario MQTT**: f.rogelez
 * **Contraseña MQTT**: 200720375
 
-### Caracterización de la variable física (Intensidad Lumínica)
 
-La intensidad lumínica es una medida fundamental en el mundo de la física que se relaciona directamente con el fenómeno de la luz. Esta variable determina la potencia lumínica que se recibe en una superficie por unidad de área. Es vital en diversas aplicaciones, desde sistemas de control de iluminación hasta estudios medioambientales.
 
-Las unidades predominantes para esta medición son:
 
-- **Lúmenes (lm):** Se refiere a la cantidad total de luz visible que emite una fuente en todas las direcciones por segundo.
-  
-- **Lux:** Es una medida de la intensidad lumínica, que representa los lúmenes por metro cuadrado. Es la cantidad total de luz visible de una fuente que incide sobre un área de superficie específica.
-
----
-
-### Selección de dispositivo de sensado
-
-Al considerar dispositivos de sensado para medir la intensidad lumínica, se encontraron varias opciones, que van desde fotorresistencias hasta fotodiodos y fototransistores. Cada sensor tiene sus particularidades, como velocidad de respuesta, precisión y rango de operación.
-
-- **Fotorresistencia (LDR):** Es un tipo de resistor cuya resistencia cambia en función de la cantidad de luz que incide sobre él. Presenta una sensibilidad en el rango de longitud de onda de 560nm a 600nm, lo que se asemeja al rango de percepción del ojo humano. Su respuesta es que cuanto más luz recibe, menor es su resistencia.
-
-- **Fotodiodos y Fototransistores:** Aunque ofrecen respuestas más rápidas y pueden tener una mayor precisión, tienden a ser más caros y requieren circuitería adicional para operar de manera óptima.
-
-**Justificación de Selección:** Se optó por utilizar la **Fotorresistencia LDR** (GL5516) para esta implementación. A pesar de tener una respuesta más lenta en comparación con otros sensores, cumple con los requisitos necesarios para esta aplicación. Su bajo costo, facilidad de uso y su curva de respuesta que se asemeja a la del ojo humano lo hacen adecuado para este proyecto. Además, no se requiere una alta precisión ni tiempo de respuesta inmediato para esta aplicación específica.
 
 
 ### Conclusión
