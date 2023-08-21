@@ -1,6 +1,11 @@
 # miso-iot
 Modulo 8 - Internet de las cosas - Maestría de la Universidad de los Andes de Ingenieria de Software MISO
 
+### Integrantes
+| Nombre                   | Correo                                                          |
+| ------------------------ | --------------------------------------------------------------- |
+| Wilber Palomino Acosta   | [w.palomino@uniandes.edu.co](mailto:w.palomino@uniandes.edu.co) |
+| Franz Rogelez Carvajal | [f.rogelez@uniandes.edu.co](mailto:f.rogelez@uniandes.edu.co)|
 
 ## Reto 1
 
@@ -69,7 +74,7 @@ Al considerar dispositivos de sensado para medir la intensidad lumínica, se enc
 
 - **Fotodiodos y Fototransistores:** Aunque ofrecen respuestas más rápidas y pueden tener una mayor precisión, tienden a ser más caros y requieren circuitería adicional para operar de manera óptima.
 
-**Justificación de Selección:** Se optó por utilizar la **Fotorresistencia LDR** para esta implementación. A pesar de tener una respuesta más lenta en comparación con otros sensores, cumple con los requisitos necesarios para esta aplicación. Su bajo costo, facilidad de uso y su curva de respuesta que se asemeja a la del ojo humano lo hacen adecuado para este proyecto. Además, no se requiere una alta precisión ni tiempo de respuesta inmediato para esta aplicación específica.
+**Justificación de Selección:** Se optó por utilizar la **Fotorresistencia LDR** (GL5516) para esta implementación. A pesar de tener una respuesta más lenta en comparación con otros sensores, cumple con los requisitos necesarios para esta aplicación. Su bajo costo, facilidad de uso y su curva de respuesta que se asemeja a la del ojo humano lo hacen adecuado para este proyecto. Además, no se requiere una alta precisión ni tiempo de respuesta inmediato para esta aplicación específica.
 
 
 ### Conclusión
