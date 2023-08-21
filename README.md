@@ -30,6 +30,7 @@ Al considerar dispositivos de sensado para medir la intensidad lumínica, se enc
 
 **Justificación de Selección:** Se optó por utilizar la **Fotorresistencia LDR** (GL5516) para esta implementación. A pesar de tener una respuesta más lenta en comparación con otros sensores, cumple con los requisitos necesarios para esta aplicación. Su bajo costo, facilidad de uso y su curva de respuesta que se asemeja a la del ojo humano lo hacen adecuado para este proyecto. Además, no se requiere una alta precisión ni tiempo de respuesta inmediato para esta aplicación específica.
 
+---
 ### Sensor de Intensidad Lumínica con NodeMCU y LDR
 
 ### Extensión de la capa de dispositivo
