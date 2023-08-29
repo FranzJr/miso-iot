@@ -8,6 +8,7 @@ Modulo 8 - Internet de las cosas - Maestría de la Universidad de los Andes de I
 | Franz Rogelez Carvajal | [f.rogelez@uniandes.edu.co](mailto:f.rogelez@uniandes.edu.co)|
 
 ## Reto 1
-
+https://github.com/FranzJr/miso-iot/tree/main/Reto%201
 
 ## Reto 2
+https://github.com/FranzJr/miso-iot/tree/main/Reto%202
