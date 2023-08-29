@@ -49,18 +49,23 @@ Se implementaron 21 nodos de tipo sensor. Estos se conectaron en serie con el m�
 - **LoRa**: Área de cobertura en azul. Ver imagen 3. Un sensor en LoRa no mostró su consumo debido a un bloqueo de CupCarbon.
 
 ![Image 1](https://lh3.googleusercontent.com/SFgZMS217pndWSXIdZbPpVRQYWCM_IbcNmq4j99Slrfzq8GKaF3XZVP1qmIy5KG7Ud-6idaHOUKN6DmWPCPUHPa4tLcB4RFZd88w-YD-7Vyhq2mGHIxcV4D_r9IbZX8vopBKCzmXlqOhnW55QxCTor8)
+
 **Imagen 1.** Simulación nodos sensor con tecnología Zigbee
 
 ![Image 2](https://lh5.googleusercontent.com/Ov1JXXcw6pRC_gziIo3QoNaaJ8I2RTKLDJGDJyDAz_anyb6dJL8ZG-yn70t5EoiERHnWuGwl9EUWFipgP-ya7t82uCFGZJtJEfy8LJWYxDUijShJtS518HeplzFozVVYeOWsg7RovkAi9C2cyFmXeDE)
+
 **Imagen 2.** Gráfica de consumo de energía de un nodo sensor con tecnología Zigbee
 
 ![Image 3](https://lh5.googleusercontent.com/SemLADuHoZbfkllrKKnOiyEcEktkRUgNG_gkP7YmNqmBA7m7adjc1-99swq4Z3qR9db41crStcETiuTDKIy3pJifu7-f6nLcz2qA4t84E3s9TrrcudrwPz1Ooebx705AIiUWtidI5wBUgMqv5hljCnY)
+
 **Imagen 3.** Simulación nodos sensor con tecnología WiFi
 
 ![Image 4](https://lh3.googleusercontent.com/on9n-8Zbbw8VR1DX1WNHopNQjydSVAdtbWefivms1CpiFpqh4STu9TPQwVzvT2m8PELRx1Vvx7Gt6WdaDVOl165l7DPZDiNyTVY6VSXxoIXvebRNAGS6H1kfZ4LtNUvvVOLcUSCgxROl2jRypcZB1kw)
+
 **Imagen 4.** Gráfica de consumo de energía de un nodo sensor con tecnología WiFi
 
-![Image 5](image-5.png)
+![Image 5](https://lh6.googleusercontent.com/fkGdqGt29V303RL8u2iif_ymXBV5ILTlhjxtLniWhbarDNzcaDZhZ58fmHfEPbQNmfyniEDKdvAtchfBiIsE2axY7TA48Rj1FSo3O2B4d75uK8Vg68CJ3zG3H21sRmShzE0Yxz0IQ7vJ-pYGNWYwFOY)
+
 **Imagen 5.** Simulación nodos sensor con tecnología LoRa
 
 Los scripts usados para cada Nodo Base y Nodo Sensor se detallan a continuación. La función principal del script es detectar eventos naturales y notificar si el nivel de batería es bajo.
@@ -80,13 +85,15 @@ c. **¿Cuántas iteraciones en promedio tardó en agotar la batería?**
    Zigbee: 2400 (ver imagen 6), WiFi: 3000 (ver imagen 7), LoRa: 16000 (ver imagen 8).
 
 ![Image 6](https://lh5.googleusercontent.com/T-7OdEivFJcQJ0PcS2FIjqatbrKMrfqSYv4t-6SOqnWx4-9sxBJLQbf0gfZWcI3HpYdXoH-JyRUTCbNR99gFbIkQ1xebn4vUicyp_iWlQxPObCdi_zZrT3doQ8jsj-jhLKiYLwtFN2pz81uXRdz-kzk)
+Imagen 6
+
 ![Image 7](https://lh3.googleusercontent.com/l0n97VKuWVS7E5tDOecAz0OxcTSDPyvKy_4YmzuTXmetExHDZBstY_xvmtPIKZU6bToCgSDrHPRGMGwoKM2NGXCR_vJZFS_mDbovjnl5mvP3xajBEBUVclYnhvhV-4ue7CDyxoEAxzIclO6DB1-JiPY)
+Imagen 7
+
 ![Image 8](https://lh6.googleusercontent.com/a9QoZL6qgPZUZh824_D7rF1k_HB49kd-ipCNWKp7gv3oTrxdEXXIXlNGrM20SUpSHfFPi-KS6V0gM8AJmxvBxdBminSlgosn9inFaUyb77HuQt4lO1qQqKYAVnhzQzITcfIf7cmj6lFf46xAcQTxVIo)
+Imagen 8
 
 ## Reflexión
 
 Los resultados reflejan las diferencias en diseño y propósito de cada tecnología. Zigbee y WiFi son adecuados para aplicaciones de corta distancia y alta velocidad, mientras que LoRa es ideal donde la eficiencia energética y la cobertura a larga distancia son esenciales. La simulación mostró la superioridad de LoRa en cuanto a eficiencia energética y rango.
 
----
-
-Espero que esta versión te sea útil. ¡Déjame saber si hay algo más en lo que pueda ayudarte!
