@@ -1,15 +1,16 @@
-#Explicación del ajuste TIMESCALE
+# Explicación del ajuste TIMESCALE
 Vamos a crear un nuevo endpoint que devuelve la suma total de valores (value) para una medida específica (measurement) de todas las estaciones (station) dentro de un rango de tiempo específico. Esta suma nos puede dar una idea de cuánto se ha medido una determinada entidad en todas las estaciones durante un período de tiempo.
 
-##Endpoint
+## Endpoint
 http://184.73.130.220:8000/totalMeasurement/Temperatura/?from=1622523600000&to=1698814799999
 http://184.73.130.220:8000/totalMeasurement/Humedad/?from=1622523600000&to=1698814799999
 
-##Postgres
+## Postgres
 SELECT SUM(value) FROM Data 
 WHERE measurement_id = :selectedMeasurementId AND time BETWEEN :start AND :end;
 
-##Función
+## Función
+```python
 def get_total_measurement(request, **kwargs):
     data_result = {}
 
