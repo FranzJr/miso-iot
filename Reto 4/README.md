@@ -1,4 +1,4 @@
-#Explicación del ajuste
+#Explicación del ajuste TIMESCALE
 Vamos a crear un nuevo endpoint que devuelve la suma total de valores (value) para una medida específica (measurement) de todas las estaciones (station) dentro de un rango de tiempo específico. Esta suma nos puede dar una idea de cuánto se ha medido una determinada entidad en todas las estaciones durante un período de tiempo.
 
 ##Endpoint
