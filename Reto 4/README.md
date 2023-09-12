@@ -39,3 +39,19 @@ def get_total_measurement(request, **kwargs):
         end = datetime.now()
     elif start == None:
         start = datetime.fromtimestamp(0)
+
+    # Convert datetime objects back to timestamps
+    start_timestamp = int(start.timestamp() * 1000000)
+    end_timestamp = int(end.timestamp() * 1000000)
+
+    total_value = Data.objects.filter(
+        measurement=selectedMeasure,
+        time__range=(start_timestamp, end_timestamp)  # Use timestamps here
+    ).aggregate(total_value=Sum("avg_value"))
+
+    data_result["measure"] = selectedMeasure.name
+    data_result["total_value"] = total_value["total_value"] if total_value["total_value"] else 0
+    data_result["start"] = start.strftime("%d/%m/%Y")
+    data_result["end"] = end.strftime("%d/%m/%Y")
+
+    return JsonResponse(data_result)
